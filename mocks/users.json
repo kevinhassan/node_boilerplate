@@ -1,0 +1,17 @@
+[
+    {
+        "_id": "u00000000001",
+        "email": "tony@rozio.fr",
+        "password": "password"
+    },
+    {
+        "_id": "u00000000002",
+        "email": "test@test.fr",
+        "password": "password"
+    },
+    {
+        "_id": "u00000000003",
+        "email": "bene@gmail.fr",
+        "password": "password"
+    }
+]

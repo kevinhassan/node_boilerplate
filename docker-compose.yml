@@ -1,0 +1,22 @@
+version: '3.1'
+services:
+  api:
+    container_name: node_boilerplate
+    build: .
+    environment:
+      - MONGODB_URI_DOCKER=mongodb://mongo:27017/node_boilerplate
+      - NODE_ENV_DOCKER=production
+    ports:
+      - "9090:9090"
+    links:
+      - mongo
+  mongo:
+    container_name: node_boilerplate_mongo
+    image: mongo
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - "27017:27017"
+
+volumes:
+  mongo-data:
